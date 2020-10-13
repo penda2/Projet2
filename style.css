@@ -1,0 +1,19 @@
+body{
+	margin: 0 auto;
+}
+header img {
+	width: 100px;
+}
+ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: flex-end;
+}
+li
+{
+	margin-left: 50px;
+}
+a {
+	text-decoration: none;
+
+}
