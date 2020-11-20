@@ -5,6 +5,7 @@
 	<title>Resevia</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"rel= "stylesheet">
+	<script src="https://kit.fontawesome.com/43c0317011.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
@@ -23,20 +24,42 @@
 		<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 			<p>En plein centre ville ou en pleine nature</p>
 			<div id="ville">
-				<form method="post" action="titre.php"><!--insertion icone et espaces?-->
+				<form method="post" action="titre.php">
+					<i class="fas fa-map-marker-alt"></i>
 					<input type="text" name="ville" value="Marseille, France" class="mrs">
 					<input type="submit" value="Rechercher" class="search">
 				</form>
 			</div>
 			<div id="filtres"> 
-				<ul>
-					<li>Economique</li>
-					<li>Familial</li>
-					<li>Romantique</li>
-					<li>Animaux autorisés</li>
-				</ul>
+				<div id="economic">
+					<form method="post" action="titre.php">
+						<i class="fas fa-money-bill-wave"></i>
+						<input type="text" name="filtres" value="Economique" class="filtre_eco">
+					</form>
+				</div>
+				<div id="familial">
+					<form method="post" action="titre.php">
+						<i class="fas fa-child"></i>
+						<input type="text" name="filtres" value="Familial" class="filtre_eco">
+					</form>
+				</div>
+				<div id="romantic">
+					<form method="post" action="titre.php">
+						<i class="fas fa-heart"></i>
+						<input type="text" name="filtres" value="Romantique" class="filtre_eco">
+					</form>
+				</div>
+				<div id="animaux">
+					<form method="post" action="titre.php">
+						<i class="fas fa-dog"></i>
+						<input type="text" name="filtres" value="Animaux autorisés" class="filtre_eco">
+					</form>
+				</div>
 			</div>
-			<p>Plus de 500 logements sont disponibles dans cette ville</p><!--icones-->	
+			<div class="plus_info">
+				<i class="fas fa-info"></i>
+				<p>Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>
 		</div>		
 	<section id="section1">
 		<div id="bloc_hébergement">
@@ -101,6 +124,7 @@
 		</div>
 		<aside id="populaires">
 				<h2>Les plus populaires</h2>
+				<i class="fas fa-chart-line"></i>
 				<div class="blocImages">
 					<figure>
 						<img class="chambres_pop"src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image_chambre6"/>
@@ -130,55 +154,58 @@
 	<section id="sec2">
 		<h2><a id="activités">Activités à Marseille</a></h2>
 		<div id="photos_activités">
-			<figure class="bloc_port">
-				<img class="vieux_port" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux_port">
-				<figcaption class="info_ports">
-					<p>Vieux port</p>
-					<p></p>
-				</figcaption>
+			<figure class="figure_1">
+				<img class="photo_1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux_port">
+				<figcaption class="info_ports">Vieux port</figcaption>
 			</figure>
-			<figure class="bloc_pomègues">
-				<img class="Fort" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo_pomègues">
-				<figcaption>Fort de Pomègues</figcaption>
+			<div>
+				<figure class="figure_2">
+					<img class="photo_2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo_pomègues">
+					<figcaption class="info_ports">Fort de Pomègues</figcaption>
+				</figure>
+				<figure class="figure_3">
+					<img class="photo_3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles_du_Frioul">
+					<figcaption class="info_ports">Îles du Frioul</figcaption>
+				</figure>
+			</div>
+			<figure class="figure_4">
+				<img class="photo_4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc">
+				<figcaption class="info_ports">Parc Nationnal des Calanques</figcaption>
 			</figure>
-			<figure class="bloc_îles">
-				<img class="îles" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles_du_Frioul">
-				<figcaption>Îles du Frioul</figcaption>
-			</figure>
-			<figure class="bloc_parc">
-				<img class="parc" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc">
-				<figcaption>Parc Nationnal des Calanques</figcaption>
-			</figure>
-			<figure class="bloc_Dame">
-				<img class="Dame" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
-				<figcaption>Notre-Dame-De-La-Garde</figcaption>
-			</figure>
+			<div>
+				<figure class="figure_5">
+					<img class="photo_5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
+					<figcaption class="info_ports">Notre-Dame-De-La-Garde</figcaption>
+				</figure>
+				<figure class="figure_6">
+					<img class="photo_6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
+					<figcaption class="info_ports">Notre-Dame-De-La-Garde</figcaption>
+				</figure>
+			</div>
 		</div>
 	</section>
 	<footer id="footer">
-		<div class="menu_footer">
-			<div class="liens_footer">
-				<h3>A propos</h3>
-				<ul>
-					<li><a href="fonct">Fonctionnement du site</a></li>
-					<li><a href="cond">Conditions générales de vente</a></li>
-					<li><a href="donn">Données et confidentialité</a></li>
-				</ul>
-			</div>
-			<div class="liens_footer">
-				<h3>Nos hébergements</h3>
-				<ul>
-					<li><a href="chart">Charte qualité</a></li>
-					<li><a href="hot">Soummettre votre hôtel</a></li>
-				</ul>
-			</div>
-			<div class="liens_footer">
-				<h3>Assistance</h3>
-				<ul>
-					<li><a href="aid">Centre d'aide</a></li>
-					<li><a href="cont">Nous contacter</a></li>
-				</ul>
-			</div>
+		<div class="liens_footer">
+			<h3>A propos</h3>
+			<ul>
+				<li><a href="fonct">Fonctionnement du site</a></li>
+				<li><a href="cond">Conditions générales de vente</a></li>
+				<li><a href="donn">Données et confidentialité</a></li>
+			</ul>
+		</div>
+		<div class="liens_footer">
+			<h3>Nos hébergements</h3>
+			<ul>
+				<li><a href="chart">Charte qualité</a></li>
+				<li><a href="hot">Soummettre votre hôtel</a></li>
+			</ul>
+		</div>
+		<div class="liens_footer">
+			<h3>Assistance</h3>
+			<ul>
+				<li><a href="aid">Centre d'aide</a></li>
+				<li><a href="cont">Nous contacter</a></li>
+			</ul>
 		</div>
 	</footer> <!-- <i class="fab fa-adn"></i> -->
 </body>
