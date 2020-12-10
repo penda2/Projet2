@@ -20,7 +20,7 @@ body{
 	align-items: flex-end;
 }
 #entête nav li {
-	margin-right: 60px;
+	margin-left: 60px;
 }
 #entête nav a {
 	font-size: 12px;
@@ -45,6 +45,11 @@ body{
 	font-weight: bold;
 	color: black;
 }
+
+.mrs:hover {
+	color: #0065FC;
+}
+
 .search {
 	background-color: #0065FC;
 	border: 1px solid #0065FC;
@@ -52,8 +57,63 @@ body{
 	padding: 10px;
 	color: white;
 }
+
+.search:hover {
+	background-color: white;
+	color: #0065FC;
+}
+
 #ville {
-	margin-bottom: 20px;
+	margin: 0;
+	padding: 0;
+}
+#ville form {
+	margin-bottom: 30px;
+}
+
+.fa-map-marker-alt {
+	background-color: #EFEFEF;
+	padding: 10px 15px;
+	border-radius: 15px 0 0 15px;
+}
+.fa-map-marker-alt:hover {
+	background-color: #0065FC;
+	color: white;
+}
+
+#economic {
+	position: relative;
+}
+
+#economic input {
+	width: 75px;
+	padding-left: 50px;
+}
+
+#familial input {
+	width: 55px;
+	padding-left: 45px;
+}
+
+#romantic input {
+	width: 75px;
+	padding-left: 45px;
+
+}
+
+#animaux input {
+	width: 115px;
+	padding-left: 47px;
+
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+	padding: 11px;
+	background-color: #DFEDFF;
+	border-radius: 50%;
+	color: #0065FC;
+	position: absolute;
+	margin-left: 0;
 }
 
 .plus_info {
@@ -63,56 +123,9 @@ body{
 	color: black;
 }
 
-.fa-map-marker-alt {
-	background-color: #EFEFEF;
-	padding: 10px 15px;
-	border-radius: 15px 0 0 15px;
-}
-#economic {
-	position: relative;
-}
-#economic input {
-	width: 80px;
-	padding-left: 55px;
-}
-#familial input {
-	width: 60px;
-	padding-left: 45px;
-}
-
-#romantic input {
-	width: 80px;
-	padding-left: 45px;
-
-}
-#animaux input {
-	width: 125px;
-	padding-left: 45px;
-
-}
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-	padding: 11px;
-	background-color: #DFEDFF;
-	border-radius: 50%;
-	color: #0065FC;
-	position: absolute;
-	margin-left: 0px;
-}
-.bloc_etoiles {
-	display: flex;
-	padding-left: 15px;
-}
-.etoiles_bleues .fa-star {
-	color: #0065FC;
-	font-size: 15px;
-}
-
-.etoiles_grises .fa-star {
-	color: lightgrey;
-	font-size: 15px;
-}
 #filtres {
-	width: 65%;
+	width: 55%;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -123,10 +136,17 @@ body{
 	padding: 10px;
 	padding-left: 40px;
 }
+
 .filtre_eco:hover {
 	border: 1px solid #0065FC;
 	box-shadow: 5px 5px 20px #DFEDFF;
+	color: #0065FC;
 }
+
+.plus_info {
+	margin-bottom: 20px;
+}
+
 .fa-info {
 	padding: 5px;
 	border: 1px solid lightgrey;
@@ -141,24 +161,27 @@ figcaption h3, figcaption p {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
 #bloc_hébergement {
 	display: flex;
 	flex-direction: column;
-	width: 900px;
+	width: 65%;
 	border: 1px solid #EFEFEF;
 	background-color: #EFEFEF;
 	border-radius: 15px;
-	padding: 25px;
 }
+
+.bloc_figure {
+	margin-bottom: 20px;
+}
+
 .photos_marseille {
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-around;
+	align-content: space-between;
 	align-items: flex-start;
 }
-.bloc_figure {
-	margin-bottom: 100px;
-}
+
 .img_Mrs { /* img */ 
 	object-fit: cover;
 	width: 100%;
@@ -168,13 +191,14 @@ figcaption h3, figcaption p {
 	border: 5px solid white;
 	box-shadow: 5px 5px 20px lightgrey;
 }
+
 figure {
 	width: 245px;
 	height: 200px;
 	position: relative;
 	border-radius: 15px;
-	margin-left: 0;
 }
+
 .description { /* figcap */
 	position: absolute;
 	bottom: -5px;
@@ -187,26 +211,44 @@ figure {
 	border-radius: 0px 0px 15px 15px;
 }
 
+.bloc_etoiles {
+	display: flex;
+	padding-left: 15px;
+}
+.etoiles_bleues .fa-star {
+	color: #0065FC;
+	font-size: 15px;
+}
+
+.etoiles_grises .fa-star {
+	color: lightgrey;
+	font-size: 15px;
+}
+
 #populaires { /* aside */ 
+	display: flex;
+	flex-direction: column;
 	position: relative;
-	width: 450px;
-	margin-left: 40px;
+	width: 30%;
+	margin-left: 30px;
 	border: 1px solid #EFEFEF;
 	background-color: #EFEFEF;
 	border-radius: 15px;
-	padding: 25px;
 }
+
 #populaires .fa-chart-line {
 	position: absolute;
 	top: 50px;
 	right: 30px;
 	font-size: 25px;
 }
+
 #blocImages { /*images aside*/ 
 	display: flex;
-	align-content: space-between;
-	align-items: flex-start;
+	margin: 0;
+	padding: 0;
 }
+
 .chambres_pop { /* img */ 
 	object-fit: cover;
 	width: 100%;
@@ -215,31 +257,32 @@ figure {
 	border: 5px solid white;
 	border-radius: 15px 0px 0px 15px;
 }
+
 #populaires figure {
 	display: flex;
 	width: 180px;
-	height: 180px;
+	height: 160px;
 	position: relative;
 	border-radius: 15px;
-	margin: 35px 0 50px 0;
 	box-shadow: 5px 5px 20px lightgrey;
+	margin-bottom: 30px;
 }
+
 .description_pop { /* figcap */ 
 	position: absolute;
-	left: 180px;
-	width: 240px;
-	height: 100%;
-	border: 5px solid white;
+	left: 140px;
+	width: 190px;
+	height: 170px;
 	border-radius: 0px 15px 15px 0px;
 	background-color: white;
 }
+
 #sec2 {
 	width: 100%;
-	display: flex;
 	flex-direction: column;	
-	height: 650px;
-	padding-top: 50px;
+	padding-top: 40px;
 }
+
 #photos_activités {
 	display: flex;
 }
@@ -252,6 +295,7 @@ figure {
 	border-radius: 15px;
 	border: 5px solid white;
 }
+
 #sec2 .figure_1, .figure_4 {
 	width: 340px;
 	height: 500px;
@@ -259,6 +303,7 @@ figure {
 	position: relative;
 	box-shadow: 5px 5px 20px lightgrey;
 }
+
 .info_ports { /* figcap */ 
 	position: absolute;
 	bottom: -10px;
@@ -269,6 +314,7 @@ figure {
 	border-radius: 0 0 15px 15px;
 
 }
+
 #sec2 .figure_2 {
 	width: 340px;
 	height: 240px;
@@ -276,6 +322,7 @@ figure {
 	position: relative;
 	box-shadow: 5px 5px 20px lightgrey;
 }
+
 #sec2 .figure_3 {
 	margin-top: 80px;
 	width: 340px;
@@ -284,6 +331,7 @@ figure {
 	position: relative;
 	box-shadow: 5px 5px 20px lightgrey;
 }
+
 #sec2 .figure_5 {
 	width: 340px;
 	height: 200px;
@@ -305,28 +353,35 @@ h1, h2, h3 {
 	font-weight: bold;
 }
 
+footer {
+	width: 0 auto;
+	background-color: #EFEFEF;
+}
+
 #footer {
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	background-color: #EFEFEF;
 	padding: 30px;
+	width: 80%;
 }
 
 #footer a {
 	text-decoration: none;
 	color: black;
 }
+
 #footer ul {
 	list-style-type: none;
 	margin-top: -10px;
 }
+
 .liens_footer {
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
 	align-items: flex-start;
 }
+
 .liens_footer h3 {
 	margin-left: 25px;
 }
@@ -373,12 +428,10 @@ h1, h2, h3 {
 
 	#populaires figure {
 		width: 90%;
-
 	}
 
 	.description_pop { /* figcap */ 
 		left: 60%;
-	
 	}
 
 	figure {
@@ -420,6 +473,7 @@ h1, h2, h3 {
 		margin: 0;
 		padding: 0;
 	}
+
 	.bloc_figure {
 		width: 100%;
 		margin: 0;
@@ -431,6 +485,7 @@ h1, h2, h3 {
 		height: auto;
 
 	}
+
 	#photos_activités {
 		display: flex;
 		flex-direction: column;
@@ -444,10 +499,10 @@ h1, h2, h3 {
 	}
 	
 	#footer {
-		display: flex;
 		flex-direction: column;
 		margin: auto;
 	}
+
 	.liens_footer {
 		margin-bottom: 20px;
 	}
