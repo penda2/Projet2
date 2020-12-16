@@ -13,14 +13,18 @@
 <body>
 	<header>
 		<div id="entête">
-			<img class= "logo_principal" src="images/logo/Reservia@3x.png" alt="logo du site">
-			<nav>
-				<ul>
-					<li><a href="hébergement" class="heb">Hébergement</a></li>
-					<li><a href="#activités" class="act">Activités</a></li>
-					<li><a href="login" class="login">S'inscrire</a></li>
-				</ul>
-			</nav>
+			<div class="le_logo">
+				<img class= "logo_principal" src="images/logo/Reservia@3x.png" alt="logo du site">
+			</div>
+			<div class="les_liens">
+				<nav>
+					<ul>
+						<li><a href="#hébergement" class="heb">Hébergement</a></li>
+						<li><a href="#activités" class="act">Activités</a></li>
+						<li><a href="login" class="login">S'inscrire</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 		<div>
@@ -66,10 +70,10 @@
 		</div>		
 	<section id="section1">
 		<div id="bloc_hébergement">
-			<h2>Hébergements à Marseille</h2>
+			<h2><a id=hébergement>Hébergements à Marseille</a></h2>
 			<div class="photos_marseille">
 				<div class="bloc_figure">
-					<figure>
+					<a href="www.reservia.com/auberge_la_cannebière" target="_blank"><figure>
 						<img class="img_Mrs" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image_chambre1"/>
 						<figcaption class="description">
 							<h3>Auberge la Cannebière</h3>
@@ -86,10 +90,10 @@
 								</span>
 							</div>
 						</figcaption>
-					</figure>
+					</figure></a>
 				</div>
 				<div class="bloc_figure">	
-					<figure>
+					<a href="www.reservia.com/hotel_du_port" target="_blank"><figure>
 						<img class="img_Mrs" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image_chambre2"/>
 						<figcaption class="description">
 							<h3>Hôtel du port</h3>
@@ -104,10 +108,10 @@
 								</div>
 							</div>
 						</figcaption>
-					</figure>
+					</figure></a>
 				</div>
 				<div class="bloc_figure">
-					<figure>
+					<a href="www.reservia.com/hotel_les_mouettes" target="_blank"><figure>
 						<img class="img_Mrs" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image_chambre3"/>
 						<figcaption class="description">
 							<h3>Hôtel les mouettes</h3>
@@ -124,10 +128,10 @@
 								</span>
 							</div>
 						</figcaption>
-					</figure>
+					</figure></a>
 				</div>
 				<div class="bloc_figure">
-					<figure>
+					<a href="www.reservia.com/hotel_de_la_mer" target="_blank"><figure>
 						<img class="img_Mrs" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="image_chambre4"/>
 						<figcaption class="description">
 							<h3>Hôtel de la mer</h3>
@@ -144,10 +148,10 @@
 								</span>
 							</div>
 						</figcaption>
-					</figure>
+					</figure></a>
 				</div>
 				<div class="bloc_figure">
-					<figure>
+					<a href="www.reservia.com/auberge_le_panier" target="_blank"><figure>
 						<img class="img_Mrs" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="image_chambre5"/>
 						<figcaption class="description">
 							<h3>Auberge le Panier</h3>
@@ -164,10 +168,10 @@
 								</span>
 							</div>
 						</figcaption>
-					</figure>
+					</figure></a>
 				</div>
 				<div class="bloc_figure">
-					<figure>
+					<a href="www.reservia.com/hotel_chez_amina" target="_blank"><figure>
 						<img class="img_Mrs" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="image_chambre6"/>
 						<figcaption class="description">
 							<h3>Hôtel chez Amina</h3>
@@ -182,55 +186,38 @@
 								</div>
 							</div>
 						</figcaption>
-					</figure>
+					</figure></a>
 				</div>
 			</div>
-			<h2>Afficher plus </h2>
+			<a href="www.reservia.com/plus_d_images" target="_blank"><h2 class="plus_d_images">Afficher plus </h2></a>
 		</div>
 		<aside id="populaires">
-			<h2>Les plus populaires</h2>
-			<i class="fas fa-chart-line"></i>
-			<div class="blocImages">
-				<figure>
-					<img class="chambres_pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image_chambre6"/>
-					<figcaption class="description_pop">
-						<h3>Hôtel Le soleil du matin</h3>
-						<p>Nuit à partir de 128<strong>€</strong></p>
-						<div class="bloc_etoiles">
-								<div class="etoiles_bleues">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
+			<div class="bloc_populaires">
+				<h2>Les plus populaires</h2>
+				<i class="fas fa-chart-line"></i>
+				<div class="blocImages">
+					<a href="www.reservia.com/hotel_le_soleil_du_matin" target="_blank"><figure>
+						<img class="chambres_pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image_chambre6"/>
+						<figcaption class="description_pop">
+							<h3>Hôtel Le soleil du matin</h3>
+							<p>Nuit à partir de 128<strong>€</strong></p>
+							<div class="bloc_etoiles">
+									<div class="etoiles_bleues">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
 								</div>
-							</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img class="chambres_pop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image_chambre6"/>
-					<figcaption class="description_pop">
-						<h3>Au coeur de l'eau Chambres d'hôtes</h3>
-						<p>Nuit à partir de 71<strong>€</strong></p>
-						<div class="bloc_etoiles">
-							<div class="etoiles_bleues">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-							</div>
-							<span class="etoiles_grises">
-								<i class="fas fa-star"></i>
-							</span>
-						</div>
-					</figcaption>
-				</figure>
-				<figure>
-					<img class="chambres_pop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="image_chambre6"/>
-					<figcaption class="description_pop">
-						<h3>Hôtel Tout bleu et Blanc</h3>
-						<p>Nuit à partir de 68<strong>€</strong></p>
-						<div class="bloc_etoiles">
+						</figcaption>
+					</figure></a>
+					<a href="www.reservia.com/au_coeur_de_l_eau" target="_blank"><figure>
+						<img class="chambres_pop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image_chambre6"/>
+						<figcaption class="description_pop">
+							<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+							<p>Nuit à partir de 71<strong>€</strong></p>
+							<div class="bloc_etoiles">
 								<div class="etoiles_bleues">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -241,41 +228,60 @@
 									<i class="fas fa-star"></i>
 								</span>
 							</div>
-					</figcaption>
-				</figure>
+						</figcaption>
+					</figure></a>
+					<a href="www.reservia.com/hotel_tout_bleu_et_blanc" target="_blank"><figure>
+						<img class="chambres_pop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="image_chambre6"/>
+						<figcaption class="description_pop">
+							<h3>Hôtel Tout bleu et Blanc</h3>
+							<p>Nuit à partir de 68<strong>€</strong></p>
+							<div class="bloc_etoiles">
+									<div class="etoiles_bleues">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+									<span class="etoiles_grises">
+										<i class="fas fa-star"></i>
+									</span>
+								</div>
+						</figcaption>
+					</figure></a>
+				</div>
 			</div>
 		</aside>
 	</section>
 	<section id="sec2">
 		<h2><a id="activités">Activités à Marseille</a></h2>
 		<div id="photos_activités">
-			<figure class="figure_1">
+			<a href="www.reservia.com/vieux_port" target="_blank"><figure class="figure_1">
 				<img class="photo_1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux_port">
 				<figcaption class="info_ports">Vieux port</figcaption>
-			</figure>
+			</figure></a>
 			<div class="duo_images">
-				<figure class="figure_2">
+				<a href="www.reservia.com/fort_de_pomegues" target="_blank"><figure class="figure_2">
 					<img class="photo_2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo_pomègues">
 					<figcaption class="info_ports">Fort de Pomègues</figcaption>
-				</figure>
-				<figure class="figure_3">
+				</figure></a>
+				<a href="www.reservia.com/iles_du_frioul" target="_blank"><figure class="figure_3">
 					<img class="photo_3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="îles_du_Frioul">
 					<figcaption class="info_ports">Îles du Frioul</figcaption>
-				</figure>
+				</figure></a>
 			</div>
-			<figure class="figure_4">
+			<a href="www.reservia.com/parc_calanques" target="_blank"><figure class="figure_4">
 				<img class="photo_4" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc">
 				<figcaption class="info_ports">Parc Nationnal des Calanques</figcaption>
-			</figure>
+			</figure></a>
 			<div class="duo_images">
-				<figure class="figure_5">
+				<a href="www.reservia.com/notre_dame_de_la_garde" target="_blank"><figure class="figure_5">
 					<img class="photo_5" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-De-La-Garde">
 					<figcaption class="info_ports">Notre-Dame-De-La-Garde</figcaption>
-				</figure>
-				<figure class="figure_6">
+				</figure></a>
+				<a href="www.reservia.com/parc_longchamp" target="_blank"><figure class="figure_6">
 					<img class="photo_6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
 					<figcaption class="info_ports">Parc Longchamp</figcaption>
-				</figure>
+				</figure></a>
 			</div>
 		</div>
 	</section>

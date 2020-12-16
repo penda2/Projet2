@@ -3,21 +3,25 @@ body{
 	margin: 0px auto;
 	padding-left: 15px;
 }
-#entête {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-}
+
 .logo_principal {
 	width: 96px;
 	height: 45px;
 	margin-top: 10px;
 }
 
+#entête {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
 #entête nav ul {
 	display: flex;
 	list-style-type: none;
 	align-items: flex-end;
+	justify-content: space-between;
 }
 #entête nav li {
 	margin-left: 60px;
@@ -41,6 +45,7 @@ body{
 }
 .mrs {
 	border: 1px solid #EFEFEF;
+	width: 130px;
 	padding: 10px;
 	font-weight: bold;
 	color: black;
@@ -90,9 +95,17 @@ body{
 	padding-left: 50px;
 }
 
+#familial {
+	position: relative;
+}
+
 #familial input {
 	width: 55px;
 	padding-left: 45px;
+}
+
+#romantic {
+	position: relative;
 }
 
 #romantic input {
@@ -101,19 +114,50 @@ body{
 
 }
 
+#animaux {
+	position: relative;
+}
+
 #animaux input {
 	width: 115px;
 	padding-left: 47px;
 
 }
 
-.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+.fa-money-bill-wave {
 	padding: 11px;
 	background-color: #DFEDFF;
 	border-radius: 50%;
 	color: #0065FC;
 	position: absolute;
-	margin-left: 0;
+	left: -3px;
+}
+
+.fa-child {
+	padding: 12px;
+	background-color: #DFEDFF;
+	border-radius: 50%;
+	color: #0065FC;
+	position: absolute;
+	left: -2px;
+}
+
+.fa-heart {
+	padding: 11px;
+	background-color: #DFEDFF;
+	border-radius: 50%;
+	color: #0065FC;
+	position: absolute;
+	left: -2px;
+}
+
+.fa-dog {
+	padding: 11px;
+	background-color: #DFEDFF;
+	border-radius: 50%;
+	color: #0065FC;
+	position: absolute;
+	left: -2px;
 }
 
 .plus_info {
@@ -124,7 +168,7 @@ body{
 }
 
 #filtres {
-	width: 55%;
+	width: 50%;
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -148,7 +192,7 @@ body{
 }
 
 .fa-info {
-	padding: 5px;
+	padding: 8px;
 	border: 1px solid lightgrey;
 	border-radius: 50%;
 	color: #0065FC;
@@ -160,6 +204,10 @@ body{
 figcaption h3, figcaption p {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+#section1 a {
+	text-decoration: none;
+	color: black;
 }
 
 #bloc_hébergement {
@@ -189,7 +237,6 @@ figcaption h3, figcaption p {
 	border-bottom: 0px;
 	border-radius: 15px;
 	border: 5px solid white;
-	box-shadow: 5px 5px 20px lightgrey;
 }
 
 figure {
@@ -197,6 +244,7 @@ figure {
 	height: 200px;
 	position: relative;
 	border-radius: 15px;
+	box-shadow: 5px 5px 20px lightgrey;
 }
 
 .description { /* figcap */
@@ -226,27 +274,31 @@ figure {
 }
 
 #populaires { /* aside */ 
-	display: flex;
-	flex-direction: column;
-	position: relative;
+
 	width: 30%;
 	margin-left: 30px;
 	border: 1px solid #EFEFEF;
 	background-color: #EFEFEF;
 	border-radius: 15px;
 }
+.bloc_populaires {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
 
 #populaires .fa-chart-line {
 	position: absolute;
-	top: 50px;
+	top: 22px;
 	right: 30px;
-	font-size: 25px;
+	font-size: 22px;
 }
 
-#blocImages { /*images aside*/ 
+#blocImages { /* aside*/ 
 	display: flex;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 .chambres_pop { /* img */ 
@@ -255,7 +307,7 @@ figure {
 	height: 100%;
 	border-right: 0px;
 	border: 5px solid white;
-	border-radius: 15px 0px 0px 15px;
+	border-radius: 15px;
 }
 
 #populaires figure {
@@ -282,6 +334,10 @@ figure {
 	flex-direction: column;	
 	padding-top: 40px;
 }
+#sec2 a {
+	text-decoration: none;
+	color: black;
+}
 
 #photos_activités {
 	display: flex;
@@ -294,6 +350,12 @@ figure {
 	border-bottom: 0px;
 	border-radius: 15px;
 	border: 5px solid white;
+}
+
+.duo_images {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #sec2 .figure_1, .figure_4 {
@@ -312,7 +374,6 @@ figure {
 	background-color: white;
 	border: 5px solid white;
 	border-radius: 0 0 15px 15px;
-
 }
 
 #sec2 .figure_2 {
@@ -324,7 +385,6 @@ figure {
 }
 
 #sec2 .figure_3 {
-	margin-top: 80px;
 	width: 340px;
 	height: 180px;
 	border-radius: 15px;
@@ -343,7 +403,6 @@ figure {
 	height: 215px;
 	border-radius: 15px;
 	box-shadow: 5px 5px 20px lightgrey;
-	margin-top: 85px;
 }
 
 h3, p {
@@ -354,7 +413,7 @@ h1, h2, h3 {
 }
 
 footer {
-	width: 0 auto;
+	width:100%;
 	background-color: #EFEFEF;
 }
 
@@ -390,18 +449,43 @@ footer {
 {
 	
 	body {
-		margin-left: 0;
-		margin-right: 0;
+		margin: 0;
+		padding: 0;
 	}
 
+	#entête {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
 	#entête nav ul {
 		width: 100%;
-		display: flex;
+		border-bottom: 2px solid lightgrey;
+		padding: 20px;
+
 	}
 
+	#entête nav li, nav a {
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.login {
+	position: absolute;
+	top: 10px;
+	left: 70%;
+	}
+
+	.heb, .act:hover {
+	color: #0065FC;
+	border-bottom: 2px solid #0065FC;
+	border-top: none;
+	}
+
+
 	#filtres {
-		width: 60%;
-		display: flex;
+		width: 100%;
 		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
@@ -413,11 +497,13 @@ footer {
 	#filtres input {
 		margin-right: 30px;
 	}
+	.search {
+	display: none;
+}
 
 	#populaires { /* aside */ 
 		width: 100%;
-		margin: 0;
-		padding-left: 15px;
+		margin: 0 auto;
 		border:none;
 		border-radius: 0;
 	}
@@ -428,15 +514,17 @@ footer {
 
 	#populaires figure {
 		width: 90%;
+		height: 150px;
 	}
 
 	.description_pop { /* figcap */ 
-		left: 60%;
+		left: 40%;
+		height: 160px;
 	}
 
 	figure {
-		width: 95%;
-		height: 300px;
+		width: 100%;
+		height: 225px;
 		margin: 0;
 		padding: 0;
 	}
@@ -447,19 +535,22 @@ footer {
 	}
 
 	.description { /* figcap */
-		margin: auto;
 		box-shadow: 5px 5px 20px lightgrey;
 		height: 100px;
 	}
 
 	#section1 {
-		display: flex;
 		flex-direction: column-reverse;
 		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#section1 figure {
+		margin-top: 30px;
 	}
 	
 	#bloc_hébergement {
-		display: flex;
 		flex-direction: column;
 		width: 100%;
 		margin: 0;
@@ -468,39 +559,26 @@ footer {
 		border: none;
 	}
 
-	.photos_marseille {
+	.photos_marseille, .bloc_figure {
 		width: 100%;
 		margin: 0;
 		padding: 0;
-	}
-
-	.bloc_figure {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
-	#sec2 {
-		width: 100%;
-		height: auto;
-
 	}
 
 	#photos_activités {
-		display: flex;
 		flex-direction: column;
 	}
 
-	#photos_activités figure {
-		width: 100%;
-		height: 300px;
-		margin: 0;
-		padding: 0;
+	#sec2 .figure_1, .figure_2, .figure_3, .figure_4, .figure_5, .figure_6 {
+		width: 95%;
+		height: 250px;
+		margin-bottom: 30px;
 	}
-	
+
 	#footer {
 		flex-direction: column;
 		margin: auto;
+		width: 100%;
 	}
 
 	.liens_footer {
@@ -508,3 +586,11 @@ footer {
 	}
 
 }
+
+@media all and (min-width: 981px) 
+{
+	
+	body {
+		margin: 0;
+		padding: 0;
+	}
