@@ -594,3 +594,44 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+
+	#filtres {
+		width: 100%;
+	}
+
+	#section1 {
+		width: 100%;
+		margin: 0;
+		flex-direction: column;
+	}
+
+	#bloc_hébergement {
+		width: 100%;
+		border-radius: 0;
+		background-color: white;
+		border: none;
+		flex-wrap: wrap;
+	}
+
+	#populaires { /* aside */ 
+		width: 100%;
+		margin: 0;
+		border: none;
+		background-color: #EFEFEF;
+		border-radius: 0;
+	}
+
+	#blocImages {
+		width: 100%;
+		margin: 0;
+		position: relative;
+	}
+	#sec2 {
+	width: 100%;
+	flex-direction: row;	
+	padding-top: 0;
+	}
+	#sec2 figure {
+		width: 100%;
+		height: 300px;
+	}
