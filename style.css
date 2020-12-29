@@ -3,20 +3,17 @@ body{
 	margin: 0px auto;
 	padding-left: 15px;
 }
-
 .logo_principal {
 	width: 96px;
 	height: 45px;
 	margin-top: 10px;
 }
-
 #entête {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 }
-
 #entête nav ul {
 	display: flex;
 	list-style-type: none;
@@ -50,11 +47,9 @@ body{
 	font-weight: bold;
 	color: black;
 }
-
 .mrs:hover {
 	color: #0065FC;
 }
-
 .search {
 	background-color: #0065FC;
 	border: 1px solid #0065FC;
@@ -62,12 +57,10 @@ body{
 	padding: 10px;
 	color: white;
 }
-
 .search:hover {
 	background-color: white;
 	color: #0065FC;
 }
-
 i.fas.fa-search {
 	display: initial;
 	background-color: #0065FC;
@@ -76,7 +69,6 @@ i.fas.fa-search {
 	padding: 10px;
 	color: white
 }
-
 #ville {
 	margin: 0;
 	padding: 0;
@@ -84,7 +76,6 @@ i.fas.fa-search {
 #ville form {
 	margin-bottom: 30px;
 }
-
 .fa-map-marker-alt {
 	background-color: #EFEFEF;
 	padding: 10px 15px;
@@ -94,45 +85,34 @@ i.fas.fa-search {
 	background-color: #0065FC;
 	color: white;
 }
-
 #economic {
 	position: relative;
 }
-
 #economic input {
 	width: 75px;
 	padding-left: 50px;
 }
-
 #familial {
 	position: relative;
 }
-
 #familial input {
 	width: 55px;
 	padding-left: 45px;
 }
-
 #romantic {
 	position: relative;
 }
-
 #romantic input {
 	width: 75px;
 	padding-left: 45px;
-
 }
-
 #animaux {
 	position: relative;
 }
-
 #animaux input {
 	width: 115px;
 	padding-left: 47px;
-
 }
-
 .fa-money-bill-wave {
 	padding: 11px;
 	background-color: #DFEDFF;
@@ -141,7 +121,6 @@ i.fas.fa-search {
 	position: absolute;
 	left: -3px;
 }
-
 .fa-child {
 	padding: 12px;
 	background-color: #DFEDFF;
@@ -150,7 +129,6 @@ i.fas.fa-search {
 	position: absolute;
 	left: -2px;
 }
-
 .fa-heart {
 	padding: 11px;
 	background-color: #DFEDFF;
@@ -159,7 +137,6 @@ i.fas.fa-search {
 	position: absolute;
 	left: -2px;
 }
-
 .fa-dog {
 	padding: 11px;
 	background-color: #DFEDFF;
@@ -168,57 +145,50 @@ i.fas.fa-search {
 	position: absolute;
 	left: -2px;
 }
-
 .plus_info {
 	display: flex;
 	align-content: flex-start;
 	align-items: baseline;
 	color: black;
 }
-
 #filtres {
 	width: 50%;
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 }
-
 .filtre_eco {
 	border: 1px solid lightgrey;
 	border-radius: 20px;
 	padding: 10px;
 	padding-left: 40px;
 }
-
 .filtre_eco:hover {
 	border: 1px solid #0065FC;
 	box-shadow: 5px 5px 20px #DFEDFF;
 	color: #0065FC;
 }
-
 .plus_info {
 	margin-bottom: 20px;
 }
-
 .fa-info {
 	padding: 8px;
 	border: 1px solid lightgrey;
 	border-radius: 50%;
 	color: #0065FC;
 }
-
 #section1 {
 	display: flex;
 }
 figcaption h3, figcaption p {
 	margin-top: 5px;
 	margin-bottom: 5px;
+	margin-left: 0;
 }
 #section1 a {
 	text-decoration: none;
 	color: black;
 }
-
 #bloc_hébergement {
 	display: flex;
 	flex-direction: column;
@@ -227,18 +197,15 @@ figcaption h3, figcaption p {
 	background-color: #EFEFEF;
 	border-radius: 15px;
 }
-
 .bloc_figure {
 	margin-bottom: 20px;
 }
-
 .photos_marseille {
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
 	align-items: flex-start;
 }
-
 .img_Mrs { /* img */ 
 	object-fit: cover;
 	width: 100%;
@@ -247,7 +214,6 @@ figcaption h3, figcaption p {
 	border-radius: 15px;
 	border: 5px solid white;
 }
-
 figure {
 	width: 240px;
 	height: 200px;
@@ -255,7 +221,6 @@ figure {
 	border-radius: 15px;
 	box-shadow: 5px 5px 20px lightgrey;
 }
-
 .description { /* figcap */
 	position: absolute;
 	bottom: -5px;
@@ -267,7 +232,6 @@ figure {
 	border-top: 0px;
 	border-radius: 0px 0px 15px 15px;
 }
-
 .bloc_etoiles {
 	display: flex;
 	padding-left: 15px;
@@ -276,14 +240,11 @@ figure {
 	color: #0065FC;
 	font-size: 15px;
 }
-
 .etoiles_grises .fa-star {
 	color: lightgrey;
 	font-size: 15px;
 }
-
 #populaires { /* aside */ 
-
 	width: 30%;
 	margin-left: 30px;
 	border: 1px solid #EFEFEF;
@@ -295,14 +256,12 @@ figure {
 	flex-direction: column;
 	position: relative;
 }
-
 #populaires .fa-chart-line {
 	position: absolute;
 	top: 22px;
 	right: 30px;
 	font-size: 22px;
 }
-
 .blocImages { /* aside*/ 
 	display: flex;
 	flex-direction: column;
@@ -310,7 +269,6 @@ figure {
 	padding: 0;
 	width: 100%;
 }
-
 .chambres_pop { /* img */ 
 	object-fit: cover;
 	width: 100%;
@@ -319,47 +277,40 @@ figure {
 	border: 5px solid white;
 	border-radius: 15px;
 }
-
 #populaires figure {
 	display: flex;
-	width: 180px;
+	width: 350px;
 	height: 160px;
 	position: relative;
 	border-radius: 15px;
 	box-shadow: 5px 5px 20px lightgrey;
 	margin-bottom: 30px;
 }
-
 .description_pop { /* figcap */ 
 	position: absolute;
-	left: 140px;
+	right: -5px;
 	width: 190px;
 	height: 170px;
 	border-radius: 0px 15px 15px 0px;
 	background-color: white;
 }
-
 #sec2 {
 	width: 100%;
 	flex-direction: column;	
 	padding-top: 40px;
 }
-
 #sec2 figure {
 	margin-left: 15px;
 }
-
 #sec2 a {
 	text-decoration: none;
 	color: black;
 }
-
 #photos_activités {
 	display: flex;
 	justify-content: flex-start;
 	margin-bottom: 50px;
 }
-
 #sec2 img { 
 	object-fit: cover;
 	width: 100%;
@@ -367,21 +318,18 @@ figure {
 	border-bottom: 0px;
 	border-radius: 15px;
 }
-
 .duo_images {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-
 #sec2 .figure_1, #sec2 .figure_4 {
-	width: 280px;
+	width: 315px;
 	height: 500px;
 	border-radius: 15px;
 	position: relative;
 	box-shadow: 5px 5px 20px lightgrey;
 }
-
 .info_ports { /* figcap */ 
 	position: absolute;
 	bottom: -10px;
@@ -390,36 +338,32 @@ figure {
 	background-color: white;
 	border-radius: 0 0 15px 15px;
 }
-
 #sec2 .figure_2 {
-	width: 280px;
+	width: 315px;
 	height: 240px;
 	border-radius: 15px;
 	position: relative;
 	box-shadow: 5px 5px 20px lightgrey;
 }
-
 #sec2 .figure_3 {
-	width: 280px;
+	width: 315px;
 	height: 180px;
 	border-radius: 15px;
 	position: relative;
 	box-shadow: 5px 5px 20px lightgrey;
 }
-
 #sec2 .figure_5 {
-	width: 280px;
+	width: 315px;
 	height: 200px;
 	border-radius: 15px;
 	box-shadow: 5px 5px 20px lightgrey;
 }
 .figure_6 {
-	width: 280px;
+	width: 315px;
 	height: 215px;
 	border-radius: 15px;
 	box-shadow: 5px 5px 20px lightgrey;
 }
-
 h3, p {
 	padding-left: 15px;
 }
@@ -427,146 +371,147 @@ h1, h2, h3 {
 	font-weight: bold;
 	margin-left: 15px;
 }
-
 footer {
 	width:100%;
 	background-color: #EFEFEF;
 }
-
 #footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 30px;
 	width: 80%;
 }
-
 #footer a {
 	text-decoration: none;
 	color: black;
 }
-
 #footer ul {
 	list-style-type: none;
 	margin-top: -10px;
 }
-
 .liens_footer {
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
 	align-items: flex-start;
 }
-
 .liens_footer h3 {
 	margin-left: 25px;
 }
 
-@media all and (min-width: 300px) and (max-width: 980px) 
+@media all and (min-width: 280px) and (max-width: 480px) /* smartphone */
 {
-	
 	body {
 		margin: 0;
 		padding: 0;
 	}
-
+	#ville, 
+	#filtres,
+	.plus_info {
+		width: 80%;
+		margin-left: 10px;
+	}
+	.logo_principal {
+		width: 60px;
+		height: 30px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.les_liens {
+		width: 100%;
+	}
 	#entête {
 		width: 100%;
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	
 	#entête nav ul {
 		width: 100%;
 		border-bottom: 2px solid lightgrey;
-		padding: 20px;
-
+		padding: 0;
+		padding-bottom: 20px;
 	}
-
-	#entête nav li, nav a {
-		margin-left: 0;
-		padding-left: 0;
+	#entête nav li, #entête nav a {
+		margin: 0;
 	}
-
+	#entête nav a {
+		margin-right: 0;
+		padding-right: 55px;
+	}
 	.login {
-	position: absolute;
-	top: 10px;
-	left: 70%;
+		position: absolute;
+		top: 10px;
+		left: 70%;
 	}
-
 	.heb, .act:hover {
-	color: #0065FC;
-	border-bottom: 2px solid #0065FC;
-	border-top: none;
+		color: #0065FC;
+		border-bottom: 2px solid #0065FC;
+		border-top: none;
 	}
-
 	.search {
 		display: none;
 	}
-
+	.mrs {
+		width: 60%;
+	}
 	#filtres {
 		width: 100%;
 		justify-content: flex-start;
 		flex-wrap: wrap;
 	}
-
 	#filtres form {
 		margin-bottom: 15px;
 	}
-
 	#filtres input {
 		margin-right: 30px;
 	}
-	
+	#section1 figure {
+		margin-left: 15px;
+	}
 	#populaires { /* aside */ 
 		width: 100%;
 		margin: 0 auto;
 		border:none;
 		border-radius: 0;
 	}
-
 	.blocImages { /*images aside*/ 
 		width: 100%;
 		flex-direction: column;
 	}
-
 	#populaires figure {
 		width: 90%;
 		height: 150px;
 	}
-
 	.description_pop { /* figcap */ 
-		left: 40%;
 		height: 160px;
+		right: -6px;
 	}
-
 	figure {
-		width: 100%;
+		margin: 0;
+		width: 92%;
 		height: 225px;
 		margin: 0;
 		padding: 0;
 	}
-
+	#sec2 figure {
+		margin-left: 5px;
+	}
 	.bloc_figure  {
 		width: 100%;
-		box-shadow: 5px 5px 20px lightgrey;
 	}
-
 	.description { /* figcap */
 		box-shadow: 5px 5px 20px lightgrey;
 		height: 100px;
 	}
-
 	#section1 {
 		flex-direction: column-reverse;
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-
 	#section1 figure {
 		margin-top: 30px;
 	}
-	
 	#bloc_hébergement {
 		flex-direction: column;
 		width: 100%;
@@ -574,21 +519,14 @@ footer {
 		background-color: white;
 		border: none;
 	}
-
 	.bloc_figure {
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-
 	#photos_activités {
 		flex-direction: column;
 	}
-
-	#sec2 figure {
-	margin: 0;
-}
-
 	#sec2 .figure_1, 
 	#sec2 .figure_2, 
 	#sec2 .figure_3, 
@@ -598,36 +536,52 @@ footer {
 		width: 95%;
 		height: 250px;
 		margin-bottom: 30px;
+		margin-left: 15px;
 	}
-
 	#footer {
 		flex-direction: column;
 		margin: auto;
 		width: 100%;
+		padding: 0;
 	}
-
 	.liens_footer {
 		margin-bottom: 20px;
 	}
-
 }
 
-@media all and (min-width: 981px) and (max-width: 1350px) 
+@media all and (min-width: 980px) and (max-width: 1350px) /* IPAD_PRO */
 {
-	
 	body {
 		margin: 0;
 		padding: 0;
 	}
-
+	#ville, 
+	#filtres,
+	.plus_info {
+		width: 80%;
+		margin-left: 10px;
+	}
+	.choix_ville {
+		background-color: #EFEFEF;
+		padding-top: 15px;
+	}
+	.fa-map-marker-alt {
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 15px 0 0 15px;
+		padding: 10px;
+		color: white;
+	}
 	i.fas.fa-search {
 		display: none;
 	}
-
-	#filtres {
-		width: 100%;
+	#filtres i {
+		border: 1px solid white;
+		box-shadow: -3px 0 2px grey;
 	}
-
+	.fa-info {
+		border: 1px solid #0065FC;
+	}
 	#section1 {
 		width: 100%;
 		margin: 0;
@@ -636,7 +590,6 @@ footer {
 	.photos_marseille {
 		align-items: center;
 	}
-
 	#bloc_hébergement {
 		width: 100%;
 		border-radius: 0;
@@ -644,7 +597,9 @@ footer {
 		border: none;
 		flex-wrap: wrap;
 	}
-
+	.description {
+		bottom: -8px;
+	}
 	#populaires { /* aside */ 
 		width: 100%;
 		margin: 0;
@@ -652,13 +607,14 @@ footer {
 		background-color: #EFEFEF;
 		border-radius: 0;
 	}
-
+	.bloc_populaires {
+		padding-bottom: 40px;
+	}
 	#populaires figure {
 		display: flex;
 		width: 250px;
 		height: 300px;
 	}
-
 	.description_pop { /* figcap */ 
 		top: 0px;
 		left: 0px;
@@ -667,7 +623,6 @@ footer {
 		border: 5px solid white;
 		border-radius: 15px 15px 0px 0px;
 	}
-
 	.blocImages {
 		display: flex;
 		flex-direction: row;
@@ -691,25 +646,157 @@ footer {
 	#sec2 .figure_5, 
 	#sec2 .figure_6 {
 		height: 250px;
+		width: 280px;
+		margin-bottom: 40px;
 	}
-	
-	#photos_activités a {
-		justify-content: space-between;
-		margin: 10px;
-		flex-wrap: wrap;
+	#photos_activités {
+		width: 100%;
+	    flex-wrap: wrap;
+	    margin: 0;
 	}
-	
+	.image_solo {
+		display: flex;
+	} 
 	.duo_images {
 		flex-direction: row;
 	}
-
 }
 
-
-@media all and (min-width: 1024px) {
-
+@media all and (min-width: 1024px) /* Desktop */
+{
 	i.fas.fa-search {
 		display: none;
 	}
+	#footer {
+		padding: 20px;
+		width: 90%;
+	}
+}
 
+@media all and (min-width: 480px) and (max-width: 980px) /* IPAD */
+{
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#ville, 
+	#filtres,
+	.plus_info {
+		width: 95%;
+		margin-left: 10px;
+	}
+	.choix_ville {
+		background-color: #EFEFEF;
+		padding-top: 15px;
+	}
+	.fa-map-marker-alt {
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 15px 0 0 15px;
+		padding: 10px;
+		color: white;
+	}
+	i.fas.fa-search {
+		display: none;
+	}
+	#filtres i {
+		border: 1px solid white;
+		box-shadow: -3px 0 2px grey;
+	}
+	.fa-info {
+		border: 1px solid #0065FC;
+	}
+	#section1 {
+		width: 100%;
+		margin: 0;
+		flex-direction: column;
+	}
+	figure {
+		margin: 20px;
+		width: 330px;
+		height: 300px;
+	}
+	.photos_marseille {
+		align-items: center;
+	}
+	#bloc_hébergement {
+		width: 100%;
+		border-radius: 0;
+		background-color: white;
+		border: none;
+		flex-wrap: wrap;
+	}
+	.description {
+		bottom: -8px;
+	}
+	#populaires { /* aside */ 
+		width: 100%;
+		margin: 0;
+		border: none;
+		background-color: #EFEFEF;
+		border-radius: 0;
+	}
+	.bloc_populaires {
+		padding-bottom: 40px;
+	}
+	#populaires figure {
+		margin: 0;
+		margin-bottom: 40px;
+		width: 100%;
+		height: 400px;
+	}
+	.description_pop { /* figcap */ 
+		bottom: -15px;
+		left: 0px;
+		width: 100%;
+		height: 100px;
+		border-radius: 0px 0px 15px 15px;
+	}
+	.blocImages {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		margin: 0;
+		position: relative;
+	}
+	#sec2 {
+		width: 100%;
+		padding-top: 0;
+	}
+	#sec2 figure {
+		width: 100%;
+		height: 300px;
+	}
+	#sec2 .figure_1, 
+	#sec2 .figure_2, 
+	#sec2 .figure_3, 
+	#sec2 .figure_4, 
+	#sec2 .figure_5, 
+	#sec2 .figure_6 {
+		margin: 20px;
+		width: 330px;
+		height: 300px
+	}
+	#photos_activités {
+		width: 100%;
+	    flex-wrap: wrap;
+	    margin: 0;
+	    position: relative;
+	}
+	.image_solo {
+		align-self: flex-end;
+	} 
+	.duo_images {
+		flex-direction: row;
+	}
+	#sec2 .figure_4 {
+		position: absolute;
+		top: 0;
+		right: 25px;
+	}
+	#footer {
+		padding: 20px;
+		width: 90%;
+	}
 }
