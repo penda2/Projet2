@@ -41,7 +41,7 @@ body{
 	color: #0065FC;
 }
 .mrs {
-	border: 1px solid #EFEFEF;
+	border: 1px solid #F2F2F2;
 	width: 130px;
 	padding: 10px;
 	font-weight: bold;
@@ -77,7 +77,7 @@ i.fas.fa-search {
 	margin-bottom: 30px;
 }
 .fa-map-marker-alt {
-	background-color: #EFEFEF;
+	background-color: #F2F2F2;
 	padding: 10px 15px;
 	border-radius: 15px 0 0 15px;
 }
@@ -158,14 +158,14 @@ i.fas.fa-search {
 	justify-content: space-between;
 }
 .filtre_eco {
-	border: 1px solid lightgrey;
+	border: 1px solid #F2F2F2;
 	border-radius: 20px;
 	padding: 10px;
 	padding-left: 40px;
 }
 .filtre_eco:hover {
 	border: 1px solid #0065FC;
-	box-shadow: 5px 5px 20px #DFEDFF;
+	box-shadow: 5px 5px 20px grey;
 	color: #0065FC;
 }
 .plus_info {
@@ -193,8 +193,8 @@ figcaption h3, figcaption p {
 	display: flex;
 	flex-direction: column;
 	width: 65%;
-	border: 1px solid #EFEFEF;
-	background-color: #EFEFEF;
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
 	border-radius: 15px;
 }
 .bloc_figure {
@@ -247,8 +247,8 @@ figure {
 #populaires { /* aside */ 
 	width: 30%;
 	margin-left: 30px;
-	border: 1px solid #EFEFEF;
-	background-color: #EFEFEF;
+	border: 1px solid #F2F2F2;
+	background-color: #F2F2F2;
 	border-radius: 15px;
 }
 .bloc_populaires {
@@ -373,7 +373,7 @@ h1, h2, h3 {
 }
 footer {
 	width:100%;
-	background-color: #EFEFEF;
+	background-color: #F2F2F2;
 }
 #footer {
 	display: flex;
@@ -427,7 +427,7 @@ footer {
 	}
 	#entête nav ul {
 		width: 100%;
-		border-bottom: 2px solid lightgrey;
+		border-bottom: 2px solid #F2F2F2;
 		padding: 0;
 		padding-bottom: 20px;
 	}
@@ -500,7 +500,7 @@ footer {
 		width: 100%;
 	}
 	.description { /* figcap */
-		box-shadow: 5px 5px 20px lightgrey;
+		box-shadow: 5px 5px 20px grey;
 		height: 100px;
 	}
 	#section1 {
@@ -548,6 +548,173 @@ footer {
 		margin-bottom: 20px;
 	}
 }
+@media all and (min-width: 480px) and (max-width: 980px) /* IPAD */
+{
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#ville, 
+	#filtres,
+	.plus_info {
+		width: 95%;
+		margin-left: 10px;
+	}
+	.logo_principal {
+		width: 80px;
+		height: 40px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.les_liens {
+		width: 100%;
+	}
+	#entête {
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#entête nav ul {
+		width: 100%;
+		border-bottom: 2px solid #F2F2F2;
+		padding: 0;
+		padding-bottom: 20px;
+	}
+	#entête nav li, #entête nav a {
+		margin: 0;
+	}
+	
+	.heb, .act:hover {
+		color: #0065FC;
+		border-bottom: 2px solid #0065FC;
+		border-top: none;
+	}
+	i.fas.fa-search {
+		display: none;
+	}
+	.mrs {
+		width: auto;
+	}
+	#filtres {
+		width: 100%;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	#filtres form {
+		margin-bottom: 15px;
+	}
+	#filtres input {
+		margin-right: 50px;
+	}
+	.choix_ville {
+		background-color: #F2F2F2;
+		padding-top: 15px;
+	}
+	.fa-map-marker-alt {
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 15px 0 0 15px;
+		padding: 10px;
+		color: white;
+	}
+	#filtres i {
+		border: 1px solid white;
+		box-shadow: -3px 0 2px grey;
+	}
+	.fa-info {
+		border: 1px solid #0065FC;
+	}
+	#section1 {
+		width: 100%;
+		margin: 0;
+		flex-direction: column;
+	}
+	.bloc_figure {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	figure {
+		margin: 0;
+		margin-bottom: 40px;
+		margin-left: 5px;
+		width: 95%;
+		height: 300px;
+	}
+	.photos_marseille {
+		align-items: center;
+	}
+	#bloc_hébergement {
+		width: 100%;
+		border-radius: 0;
+		background-color: white;
+		border: none;
+		flex-wrap: wrap;
+	}
+	.description {
+		bottom: -8px;
+	}
+	#populaires { /* aside */ 
+		width: 100%;
+		margin: 0;
+		border: none;
+		background-color: #F2F2F2;
+		border-radius: 0;
+	}
+	.bloc_populaires {
+		padding-bottom: 40px;
+	}
+	#populaires figure {
+		margin: 0;
+		margin-bottom: 40px;
+		margin-left: 5px;
+		width: 95%;
+		height: 300px;
+	}
+	.description_pop { /* figcap */ 
+		height: 100%;
+		border: 5px solid white;
+		right: -10px;
+	}
+	.blocImages {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		position: relative;
+	}
+	#sec2 {
+		width: 100%;
+		padding-top: 0;
+	}
+	#sec2 figure {
+		width: 100%;
+	}
+	#sec2 .figure_1, 
+	#sec2 .figure_2, 
+	#sec2 .figure_3, 
+	#sec2 .figure_4, 
+	#sec2 .figure_5, 
+	#sec2 .figure_6 {
+		margin: 0;
+		width: 95%;
+		height: 300px;
+		margin-top: 40px;
+		margin-left: 10px;
+	}
+	#photos_activités {
+		width: 100%;
+		flex-direction: column;
+	}
+	.duo_images {
+		flex-direction: column;
+	}
+	#footer {
+		padding: 20px;
+		width: 80%;
+		flex-direction: column;
+	}
+}
 
 @media all and (min-width: 980px) and (max-width: 1350px) /* IPAD_PRO */
 {
@@ -562,7 +729,7 @@ footer {
 		margin-left: 10px;
 	}
 	.choix_ville {
-		background-color: #EFEFEF;
+		background-color: #F2F2F2;
 		padding-top: 15px;
 	}
 	.fa-map-marker-alt {
@@ -604,7 +771,7 @@ footer {
 		width: 100%;
 		margin: 0;
 		border: none;
-		background-color: #EFEFEF;
+		background-color: #F2F2F2;
 		border-radius: 0;
 	}
 	.bloc_populaires {
@@ -638,6 +805,7 @@ footer {
 	#sec2 figure {
 		width: 100%;
 		height: 300px;
+		margin: 25px;
 	}
 	#sec2 .figure_1, 
 	#sec2 .figure_2, 
@@ -651,12 +819,8 @@ footer {
 	}
 	#photos_activités {
 		width: 100%;
-	    flex-wrap: wrap;
-	    margin: 0;
+		flex-wrap: wrap;
 	}
-	.image_solo {
-		display: flex;
-	} 
 	.duo_images {
 		flex-direction: row;
 	}
@@ -666,134 +830,6 @@ footer {
 {
 	i.fas.fa-search {
 		display: none;
-	}
-	#footer {
-		padding: 20px;
-		width: 90%;
-	}
-}
-
-@media all and (min-width: 480px) and (max-width: 980px) /* IPAD */
-{
-	body {
-		margin: 0;
-		padding: 0;
-	}
-	#ville, 
-	#filtres,
-	.plus_info {
-		width: 95%;
-		margin-left: 10px;
-	}
-	.choix_ville {
-		background-color: #EFEFEF;
-		padding-top: 15px;
-	}
-	.fa-map-marker-alt {
-		background-color: #0065FC;
-		border: 1px solid #0065FC;
-		border-radius: 15px 0 0 15px;
-		padding: 10px;
-		color: white;
-	}
-	i.fas.fa-search {
-		display: none;
-	}
-	#filtres i {
-		border: 1px solid white;
-		box-shadow: -3px 0 2px grey;
-	}
-	.fa-info {
-		border: 1px solid #0065FC;
-	}
-	#section1 {
-		width: 100%;
-		margin: 0;
-		flex-direction: column;
-	}
-	figure {
-		margin: 20px;
-		width: 330px;
-		height: 300px;
-	}
-	.photos_marseille {
-		align-items: center;
-	}
-	#bloc_hébergement {
-		width: 100%;
-		border-radius: 0;
-		background-color: white;
-		border: none;
-		flex-wrap: wrap;
-	}
-	.description {
-		bottom: -8px;
-	}
-	#populaires { /* aside */ 
-		width: 100%;
-		margin: 0;
-		border: none;
-		background-color: #EFEFEF;
-		border-radius: 0;
-	}
-	.bloc_populaires {
-		padding-bottom: 40px;
-	}
-	#populaires figure {
-		margin: 0;
-		margin-bottom: 40px;
-		width: 100%;
-		height: 400px;
-	}
-	.description_pop { /* figcap */ 
-		bottom: -15px;
-		left: 0px;
-		width: 100%;
-		height: 100px;
-		border-radius: 0px 0px 15px 15px;
-	}
-	.blocImages {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		width: 100%;
-		margin: 0;
-		position: relative;
-	}
-	#sec2 {
-		width: 100%;
-		padding-top: 0;
-	}
-	#sec2 figure {
-		width: 100%;
-		height: 300px;
-	}
-	#sec2 .figure_1, 
-	#sec2 .figure_2, 
-	#sec2 .figure_3, 
-	#sec2 .figure_4, 
-	#sec2 .figure_5, 
-	#sec2 .figure_6 {
-		margin: 20px;
-		width: 330px;
-		height: 300px
-	}
-	#photos_activités {
-		width: 100%;
-	    flex-wrap: wrap;
-	    margin: 0;
-	    position: relative;
-	}
-	.image_solo {
-		align-self: flex-end;
-	} 
-	.duo_images {
-		flex-direction: row;
-	}
-	#sec2 .figure_4 {
-		position: absolute;
-		top: 0;
-		right: 25px;
 	}
 	#footer {
 		padding: 20px;
